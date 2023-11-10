@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import Hero from './components/Hero'
 import Service from './components/Service'

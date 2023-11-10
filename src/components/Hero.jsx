@@ -18,13 +18,15 @@ function Hero() {
       setActiveSection(sectionId);
     }
   };
+
+  console.log('Active Section:', activeSection);
   return (
     <div className="irregular-curved-div" id="home">
       <div className="hold-contact">
         <h4>Other Services</h4>
         <a href="https://heartfeltholdings.com/hsl/" className="link1">Consulting Agency</a>
-        <a href=""  className="link2">AppOTG</a>
-        <a href="" className="link3">WorkDevs</a>
+        <a href="#appotg"  className="link2">AppOTG</a>
+        <a href="#worksdev" className="link3">WorkDevs</a>
       </div>
       <Navbar />
       <div className="hero-content">
