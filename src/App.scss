@@ -617,6 +617,7 @@
   padding-bottom: 40px;
   @media screen and (max-width: 768px) {
     height: 120vh;
+    align-items: center;
   }
  
 
@@ -690,6 +691,7 @@
     .about-content {
       flex-direction: column;
       margin-left: 20px;
+      align-items: center;
 
       .about-title,
       .about-academy {
