@@ -33,8 +33,8 @@ function Navbar() {
         <ul>
           <li><a href='home'>Home</a></li>
           <li><a href='#services' onClick={() => scrollToSection('services')}>Services</a></li>
-          <li><a href='#services' onClick={() => scrollToSection('about')}>About</a></li>
-          <li><a href='#services' onClick={() => scrollToSection('contact')}>Contact</a></li>
+          <li><a href='#' onClick={() => scrollToSection('about')}>About</a></li>
+          <li><a href='#contact' onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
       </div>
       <div className='menu-icon' onClick={toggleMenu}>&#9776;</div>
