@@ -1,25 +1,24 @@
 import React from "react";
 import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
-import Logo from "../assests/logo.jpeg";
+import Logo from '../assests/logo.jpeg'
 
 function Footer() {
-
-    
   const [activeSection, setActiveSection] = useState(null);
-
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
 
     if (section) {
       window.scrollTo({
-        behavior: 'smooth',
+        behavior: "smooth",
         top: section.offsetTop,
       });
 
       setActiveSection(sectionId);
     }
   };
+
+  console.log('Active Section:', activeSection);
   return (
     <div className="footer-body">
       <div className="footer-address">
@@ -28,7 +27,7 @@ function Footer() {
           <p>matthewameh007@heartfeltholdings.com</p>
           <p>123 Main Street, Anytown, USA</p>
           <div className="footer-logo">
-            <img src={Logo} alt=""  onClick={()=>scrollToSection('home')}/>
+            <img src={Logo} alt="" onClick={() => scrollToSection("home")} />
           </div>
         </div>
       </div>
@@ -80,8 +79,6 @@ function Footer() {
             />
           </div>
         </div>
-
-       
       </div>
       <p className="copyrights">
         All Rights Reserved &copy; {new Date().getFullYear()} HeartFeltHoldings
