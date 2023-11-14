@@ -855,6 +855,7 @@
 .footer-address {
   width: 100%;
   height: 80px;
+  box-sizing: border-box;
   background-color: rgb(246, 246, 248);
   display: flex;
   align-items: center;
@@ -894,8 +895,14 @@
       cursor: pointer;
 
       @media screen and (max-width: 768px) {
-        margin-left: 225px;
-        width: 100px;
+        margin-left: 170px;
+        width: 150px;
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-left: 200px;
+        width: 150px;
         margin-top: 10px;
       }
     }
@@ -918,7 +925,7 @@
   color: rgb(244, 243, 247);
   width: 40%;
   font-family: "Lato", "sans-serif";
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) and (min-width : 300px) {
 
     h2{
       width: 100%;
@@ -956,8 +963,7 @@
 
   .social-icons {
     margin-top: 15px;
-
-    
+ 
   }
 }
 
@@ -969,6 +975,10 @@
   font-size: 13px;
   font-family: "Lato", "sans-serif";
   border-top: 1px solid rgba(25, 23, 165, 0.74);
+
+   @media screen and (max-width: 480px) and (max-width: 300px)  {
+    font-size: 13px;
+   }
 }
 
 

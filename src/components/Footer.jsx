@@ -50,7 +50,7 @@ function Footer() {
               url="https://twitter.com"
               fgColor="gold"
               bgColor="black"
-              style={{ width: "40px", height: "40px", borderRadius: "50%" }}
+              style={{ width: "35px", height: "35px", borderRadius: "50%" }}
               className="social"
             />
             <SocialIcon
@@ -59,8 +59,8 @@ function Footer() {
               bgColor="black"
               style={{
                 marginLeft: "10px",
-                width: "40px",
-                height: "40px",
+                width: "35px",
+                height: "35px",
                 borderRadius: "50%",
               }}
               className="social"
@@ -71,8 +71,8 @@ function Footer() {
               bgColor="black"
               style={{
                 marginLeft: "10px",
-                width: "40px",
-                height: "40px",
+                width: "35px",
+                height: "35px",
                 borderRadius: "50%",
               }}
               className="social"
