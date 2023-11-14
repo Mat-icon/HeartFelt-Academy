@@ -849,6 +849,7 @@
 
   @media screen and (max-width: 768px) {
     height: auto;
+    padding-bottom: 12px;
   }
 }
 
@@ -895,7 +896,7 @@
       cursor: pointer;
 
       @media screen and (max-width: 768px) {
-        margin-left: 170px;
+        margin-left: 150px;
         width: 150px;
         margin-top: 10px;
       }
