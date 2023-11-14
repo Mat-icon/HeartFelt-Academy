@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
-import Person from '../assests/pngegg.png'
+import React, { useState } from 'react';
+import Person from '../assests/pngegg.png';
+import axios from 'axios';
+
 
 function Contact() {
 
@@ -9,11 +11,17 @@ function Contact() {
         text : ''
     })
 
-
-    function handleSubmit(e){
-        e.preventDefault();
-
-        console.log('Form Data', form)
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        const response = await axios.post('http://localhost:3001/send-email', form);
+        console.log(response.data);
+  
+        // Handle success or display an error to the user
+      } catch (error) {
+        console.error('Error sending email:', error);
+      }
     }
 
     const handleChange = (e) => {
@@ -21,14 +29,15 @@ function Contact() {
         setForm({ ...form, [name]: value });
       };
     
-  return (
+  return ( 
     <div className="contact-body" id='contact'>
         <div className="contact-title">
             <h2>Need Any Help?</h2>
         </div>
         <div className="contact-flex">
               <img src={Person} alt=''/>
-        <div className="contact-form">
+           
+        <div className="contact-form">  
             <form onSubmit={handleSubmit}>
                 <div className="form-title">
                     <h3>Contact Us</h3>
@@ -39,9 +48,11 @@ function Contact() {
                 <textarea rows={10} cols={20} name=  'text' placeholder='Write a message...' onChange={handleChange} value={form.text} required />
                 <button className='contact-send' type='submit' >Send a message</button>
             </form>
+            
         </div>
-        </div>
+       
       
+        </div> 
     </div>
   )
 }
