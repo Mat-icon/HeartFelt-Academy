@@ -862,13 +862,14 @@
 
   .footer-info {
     display: inline-flex;
-    margin-top: "10px";
+    margin-top: 10px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-left: 0;
-      
+      padding-top: 10px;
+      padding-left: 10px;
     }
 
     p {
@@ -878,11 +879,11 @@
       padding-top: 20px;
       font-size: 14px;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
         margin-left: 0;
-        padding-top: 10px;
+        padding-top: 7px;
         font-size: 10px;
       }
     }
@@ -893,7 +894,7 @@
       cursor: pointer;
 
       @media screen and (max-width: 768px) {
-        margin-left: 0;
+        margin-left: 225px;
         width: 100px;
         margin-top: 10px;
       }
@@ -905,6 +906,10 @@
   display: flex;
   margin: 20px auto;
   transform: translateX(130px);
+
+   @media screen and (max-width: 768px) {
+  transform: translateX(30px);
+}
 }
 
 .footer-title {
@@ -913,19 +918,23 @@
   color: rgb(244, 243, 247);
   width: 40%;
   font-family: "Lato", "sans-serif";
-  h2{
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
+
+    h2{
       width: 100%;
+      font-size: 18px;
+    }
+
+    button{
+      margin-top: 12px;
     }
   }
 
   p {
-    width: 50%;
+    width: 90%;
     font-size: 13px;
     color: goldenrod;
     margin-top: 10px;
-
-    
   }
 
   input {
