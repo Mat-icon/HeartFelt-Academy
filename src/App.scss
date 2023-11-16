@@ -599,7 +599,7 @@
   @media screen and (max-width: 480px) {
    max-width: 100%;
    height: 130vh;
-
+    padding-bottom: 20px;
   }
 
  
@@ -643,6 +643,7 @@
         @media screen and (max-width: 480px) {
           p{
             font-size: 13px;
+            text-align: center;
             
             span{
               font-size: 13px;
